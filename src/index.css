@@ -1,0 +1,174 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 10% 3.9%; /* Dark Gray-Blue */
+    --foreground: 0 0% 98%; /* Almost White */
+    --card: 240 10% 10%; /* Darker Card Background */
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 330 85% 55%; /* Vibrant Pink */
+    --primary-foreground: 0 0% 100%; /* White for Pink bg */
+    --secondary: 240 5% 25%; /* Muted Dark Gray */
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 5% 15%;
+    --muted-foreground: 240 5% 65%;
+    --accent: 330 75% 65%; /* Lighter Pink for accents */
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 72% 51%; /* Red */
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5% 20%; /* Darker Border */
+    --input: 240 5% 20%;
+    --ring: 330 85% 55%; /* Pink for rings */
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* Same as :root for now, as we are designing a dark theme first */
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 10%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 330 85% 55%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 240 5% 25%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 5% 15%;
+    --muted-foreground: 240 5% 65%;
+    --accent: 330 75% 65%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5% 20%;
+    --input: 240 5% 20%;
+    --ring: 330 85% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif; /* Example font, ensure it's imported or available */
+    @apply overflow-x-hidden; /* Prevent horizontal scroll issues */
+  }
+  /* Add a fallback font if Inter is not available */
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+}
+
+/* Custom gradient backgrounds */
+.gradient-bg-pink {
+  background: linear-gradient(135deg, #EC4899 0%, #D946EF 100%); /* Pink shades */
+}
+
+.gradient-text-pink {
+  background: linear-gradient(135deg, #F472B6 0%, #EC4899 100%); /* Lighter Pink to Pink */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.pulse-animation {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .7;
+  }
+}
+
+.floating {
+  animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0% { transform: translate(0, 0px); }
+  50% { transform: translate(0, -10px); }
+  100% { transform: translate(0, -0px); }
+}
+
+.glow-effect-pink {
+  box-shadow: 0 0 20px rgba(236, 72, 153, 0.4); /* Pink glow */
+}
+
+.glass-effect-dark {
+  background: rgba(23, 23, 23, 0.6); /* Adjusted for a bit more opacity and less blue */
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(55, 65, 81, 0.2); /* Darker border */
+}
+
+.card-hover-effect {
+  @apply transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-pink-500/30;
+}
+
+/* Update existing .gradient-text to use new theme */
+.gradient-text {
+  background: linear-gradient(135deg, #F472B6 0%, #EC4899 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Update existing .glow-effect to use new theme */
+.glow-effect {
+  box-shadow: 0 0 20px rgba(236, 72, 153, 0.4);
+}
+
+/* Update existing .glass-effect to use new dark theme */
+.glass-effect {
+  background: rgba(31, 41, 55, 0.3); /* Slightly more opaque dark glass */
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(75, 85, 99, 0.2);
+}
+
+/* Button specific styles */
+.button-primary {
+  @apply bg-pink-600 hover:bg-pink-700 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 glow-effect-pink;
+}
+
+.button-outline {
+  @apply bg-transparent border-2 border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300;
+}
+
+/* Input field styles */
+input[type="text"], input[type="email"], textarea {
+  @apply w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-gray-200 focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-colors placeholder-gray-500;
+}
+
+/* Noise Pattern for Hero Background */
+.noise-pattern {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 250 250' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  animation: noise 0.2s infinite;
+  opacity: 0.03; /* Very subtle */
+  pointer-events: none;
+}
+
+@keyframes noise {
+  0%, 100% { background-position: 0 0; }
+  10% { background-position: -5% -10%; }
+  20% { background-position: -15% 5%; }
+  30% { background-position: 7% -25%; }
+  40% { background-position: 20% 25%; }
+  50% { background-position: -25% 10%; }
+  60% { background-position: 15% 5%; }
+  70% { background-position: 0% 15%; }
+  80% { background-position: 25% 35%; }
+  90% { background-position: -10% 10%; }
+}
