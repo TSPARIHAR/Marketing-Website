@@ -7,44 +7,28 @@ This is a **sanitized and containerized version** of a real-world influencer mar
 ## 🚀 Tech Stack
 
 ### ⚙️ Frontend
-- HTML5
-- CSS3
-- JavaScript (ES6+)
-- [Vite](https://vitejs.dev/) – blazing-fast frontend tooling
-- [Tailwind CSS](https://tailwindcss.com/) – utility-first CSS framework
+- HTML5  
+- CSS3  
+- JavaScript (ES6+)  
+- [Vite](https://vitejs.dev/) – blazing-fast frontend tooling  
+- [Tailwind CSS](https://tailwindcss.com/) – utility-first CSS framework  
 
 ### 📦 Tooling & DevOps
-- Node.js & npm
-- Git for version control
-- [Docker](https://www.docker.com/) – for containerized development and deployment
-- PostCSS for custom styling
-- ESLint & Prettier (optional for code formatting)
+- Node.js & npm  
+- Git for version control  
+- [Docker](https://www.docker.com/) – for containerized development and deployment  
+- PostCSS for custom styling  
+- ESLint & Prettier (optional for code formatting)  
 
 ---
 
 ## 🧩 Features
 
-- 📱 Fully responsive and mobile-optimized layout
-- ⚡ Fast builds and hot reload with Vite
-- 🎨 Clean and modern design using Tailwind utility classes
-- 📦 Docker support for containerized deployment
-- 🧱 Modular codebase with reusable components
-
----
-
-
----
-
-## 🐳 Docker Support
-
-### Build and Run in Docker:
-
-```bash
-# Build the Docker image
-docker build -t marketing-website .
-
-# Run the container
-docker run -d -p 5173:5173 marketing-website
+- 📱 Fully responsive and mobile-optimized layout  
+- ⚡ Fast builds and hot reload with Vite  
+- 🎨 Clean and modern design using Tailwind utility classes  
+- 📦 Docker support for containerized deployment  
+- 🧱 Modular codebase with reusable components  
 
 ---
 
@@ -67,19 +51,16 @@ This repository showcases the codebase **only**. All sensitive content and brand
 
 ---
 
-## 🗂️ How to Run Locally
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/TSPARIHAR/company-website-template.git
+### 🗂️ How to Run Locally
+bash
+## 1. Clone the repository
+git clone https://github.com/TSPARIHAR/Marketing-Website-template.git
 cd Marketing-Website-template
 
-# 2. Install dependencies
+## 2. Install dependencies
 npm install
 
-# 3. Run the development server
+## 3. Run the development server
 npm run dev
 
-# 4. Open http://localhost:5173 in your browser
-
-
+## 4. Open http://localhost:5173 in your browser
