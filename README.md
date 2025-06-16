@@ -1,2 +1,85 @@
-# Marketing-Website
-# Marketing-Website
+# Marketing-Website (Influencer Marketing Startup Website)
+
+This is a **sanitized and containerized version** of a real-world influencer marketing company website I developed. The original company’s branding and content have been removed and replaced with placeholders. This repository showcases a production-ready marketing website built with a modern frontend stack and Docker for containerization.
+
+---
+
+## 🚀 Tech Stack
+
+### ⚙️ Frontend
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+- [Vite](https://vitejs.dev/) – blazing-fast frontend tooling
+- [Tailwind CSS](https://tailwindcss.com/) – utility-first CSS framework
+
+### 📦 Tooling & DevOps
+- Node.js & npm
+- Git for version control
+- [Docker](https://www.docker.com/) – for containerized development and deployment
+- PostCSS for custom styling
+- ESLint & Prettier (optional for code formatting)
+
+---
+
+## 🧩 Features
+
+- 📱 Fully responsive and mobile-optimized layout
+- ⚡ Fast builds and hot reload with Vite
+- 🎨 Clean and modern design using Tailwind utility classes
+- 📦 Docker support for containerized deployment
+- 🧱 Modular codebase with reusable components
+
+---
+
+
+---
+
+## 🐳 Docker Support
+
+### Build and Run in Docker:
+
+```bash
+# Build the Docker image
+docker build -t marketing-website .
+
+# Run the container
+docker run -d -p 5173:5173 marketing-website
+
+---
+
+## ✅ Disclaimer
+
+This repository showcases the codebase **only**. All sensitive content and branding have been removed to protect the original company's identity.
+
+🛑 **No proprietary assets, business logic, or private data are included.**  
+✔️ This version is intended purely for **portfolio, learning, and demonstration**.
+
+---
+
+
+## 🧑‍💻 Author
+
+**Tanmay Singh Parihar**  
+📧 tanmaysingh.tsp@gmail.com  
+🔗 [GitHub](https://github.com/TSPARIHAR)  
+🔗 [LinkedIn](https://linkedin.com/in/tanmay-singh-parihar)
+
+---
+
+## 🗂️ How to Run Locally
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/TSPARIHAR/company-website-template.git
+cd Marketing-Website-template
+
+# 2. Install dependencies
+npm install
+
+# 3. Run the development server
+npm run dev
+
+# 4. Open http://localhost:5173 in your browser
+
+
