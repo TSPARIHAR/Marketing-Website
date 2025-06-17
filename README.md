@@ -43,7 +43,8 @@ This repository showcases the codebase **only**. All sensitive content and brand
 
 ## Official Link
 
-For refrence purpose **only**, the official link of the website
+For refrence purpose **only**, the official link of the website.
+
 🔗 https://trendpulsemedia.in/
 
 
