@@ -41,7 +41,7 @@ This repository showcases the codebase **only**. All sensitive content and brand
 
 ---
 
-## Official Link
+## 🔗 Official Link
 
 For refrence purpose **only**, the official link of the website.
 
