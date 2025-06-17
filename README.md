@@ -41,6 +41,11 @@ This repository showcases the codebase **only**. All sensitive content and brand
 
 ---
 
+## Official Link
+
+For refrence purpose **only**, the official link of the website
+🔗 https://trendpulsemedia.in/
+
 
 ## 🧑‍💻 Author
 
@@ -50,6 +55,7 @@ This repository showcases the codebase **only**. All sensitive content and brand
 🔗 [LinkedIn](https://linkedin.com/in/tanmay-singh-parihar)
 
 ---
+
 
 ### 🗂️ How to Run Locally
 bash
